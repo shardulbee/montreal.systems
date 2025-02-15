@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montreal Systems</title>
+    <style>
+        :root {
+            --primary-color: #3F6346;
+            --accent-color: #BF9B30;
+            --bg-color: #FFFEF5;
+            --text-color: #2C2C2C;
+            --border-color: #E8E4D5;
+            --table-header: #3F6346;
+            --quote-color: #4A6670;
+            --hover-color: #C4A750;
+            --table-stripe: #F9F7F0;
+        }
+
+        body {
+            font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: var(--text-color);
+            background: var(--bg-color);
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 760px;
+            padding: 2rem;
+        }
+
+        h1, h2 {
+            font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+            font-weight: bold;
+            color: var(--primary-color);
+            line-height: 1.1;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: color 0.2s ease, border-color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--hover-color);
+            border-bottom-color: var(--hover-color);
+        }
+
+        ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.15rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 1.1rem;
+            border: 1px solid var(--border-color);
+        }
+
+        th, td {
+            padding: 0.8rem;
+            border: 1px solid var(--border-color);
+            text-align: left;
+        }
+
+        th {
+            background: var(--primary-color);
+            color: var(--bg-color);
+            border-bottom: 3px solid var(--accent-color);
+        }
+
+        tr:nth-child(even) {
+            background: var(--table-stripe);
+        }
+
+        .quote {
+            font-style: italic;
+            border-left: 4px solid var(--accent-color);
+            padding: 1rem 1rem 1rem 1.5rem;
+            margin: 1.5rem 0;
+            color: var(--quote-color);
+            background: var(--table-stripe);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                font-size: 1.1rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+
+            table {
+                display: block;
+                overflow-x: auto;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Montreal Systems</h1>
+        </header>
+
+        <main>
+            <section>
+                <p>
+                    Montreal Systems is an independent tech talk series focused on systems programming in Montreal and the surrounding area. We are a community-run initiative, not affiliated with any company.
+                </p>
+
+                <p>
+                    We focus on high-quality talks from expert speakers, centered on engineering challenges and solutions.
+                </p>
+
+                <div class="quote">
+                    "Systems programming is a way of modelling software development. It's not about a category of what you are working on, it's a way of looking at the problem. An excellent systems programmer fully understands the systems involved."
+                    <br><br>
+                    - <a href="https://www.youtube.com/watch?v=Qncdi-Fg0-I">Andrew Kelley</a>
+                </div>
+
+                <p>Speakers share their experience building, testing, debugging, and maintaining:</p>
+
+                <ul>
+                    <li>Compilers, parsers, virtual machines, IDEs, profiling tools</li>
+                    <li>Databases, storage systems, networking stacks, distributed systems</li>
+                    <li>Large-scale infrastructure, low-latency services, high-availability systems</li>
+                    <li>Formal methods, verification, security</li>
+                    <li>Browser engines, kernel development, systems security</li>
+                    <li>Performance optimization, HPC, algorithms, data structures</li>
+                    <li>Operating systems, kernels, device drivers</li>
+                    <li>Embedded systems, IoT, robotics</li>
+                    <li>AI/ML infrastructure, training systems, inference optimization</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Schedule</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Location</th>
+                            <th>Speakers</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>March 2025</td>
+                            <td>TBA</td>
+                            <td>TBA</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h2>Join the Community</h2>
+                <p>
+                    <a href="https://forms.gle/p7atcuPanxayBUA8A">Sign up</a> for our mailing list to get notified about upcoming events. No spam, just systems.
+                </p>
+            </section>
+
+            <section>
+                <h2>Organized By</h2>
+                <p>
+                    This talk series is organized by <a href="https://shardul.baral.ca">Shardul Baral</a>.
+                </p>
+            </section>
+
+            <section>
+                <h2>Inspired By</h2>
+                <ul>
+                    <li><a href="https://vancouver.systems">Vancouver Systems</a></li>
+                    <li><a href="https://ottawasystems.xyz">Ottawa Systems</a></li>
+                    <li><a href="https://nycsystems.xyz">NYC Systems</a></li>
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
